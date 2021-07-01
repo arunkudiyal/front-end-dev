@@ -1,62 +1,25 @@
-/* selector {
-    property: value;
-} */
-
-/* SELECTORS */
-
-/* Element Selector */
-/* h2 {
-    color: blue;
-} */
-
-/* Idetifier Selectors - id, class */
-/* #test {
-    color: purple;
+/* Colors & Backgrounds */
+/* 
+Name color
+Hex Color - Hexadecimal code -> 000000 (black), FFFFFF(white)
+RGB() - Red Green Blue (x, y, z), 255 < x, y, z > 0
+*/
+body {
+    /* background: url(https://photographylife.com/wp-content/uploads/2016/06/Mass.jpg); */
+    /* background-color: #fffff */
+    background: rgb(255, 255, 255);
 }
 
-.test {
-    color:yellow
-} */
+.container-one {
+    height: 300px;
+    width: 70%;
 
-/* Pseudo Selectors - Referring to a relative or a default action */
-h2:hover {
-    color: blue;
+    background: url('https://photographylife.com/wp-content/uploads/2016/06/Mass.jpg');
+    background-color: rgb(153, 192, 224);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 
-.list-items:first-child {
-    color: navy;
-}
-
-.list-items:last-child {
-    color: yellow
-}
-
-.list-items:nth-child(3) {
-    color: brown;
-}
-
-#google-link:link {
-    color: coral;
-}
-
-#google-link:visited {
-    color:darkgreen;
-}
-
-/* Attribute Selectors */
-h2[class=test] {
-    color: green;
-}
-
-/* LINKS */
-/* img[src^="./img/"] {
-    border: 10px solid blue;
-} */
-
-/* img[src$=".jpeg"] {
-    border: 10px solid yellow;
-} */
-
-/* img[src*=".jpeg"] {
-    border: 10px solid navy;
-} */
+/* #heading {
+    color: 
+}  */
