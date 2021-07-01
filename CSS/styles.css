@@ -1,0 +1,62 @@
+/* selector {
+    property: value;
+} */
+
+/* SELECTORS */
+
+/* Element Selector */
+/* h2 {
+    color: blue;
+} */
+
+/* Idetifier Selectors - id, class */
+/* #test {
+    color: purple;
+}
+
+.test {
+    color:yellow
+} */
+
+/* Pseudo Selectors - Referring to a relative or a default action */
+h2:hover {
+    color: blue;
+}
+
+.list-items:first-child {
+    color: navy;
+}
+
+.list-items:last-child {
+    color: yellow
+}
+
+.list-items:nth-child(3) {
+    color: brown;
+}
+
+#google-link:link {
+    color: coral;
+}
+
+#google-link:visited {
+    color:darkgreen;
+}
+
+/* Attribute Selectors */
+h2[class=test] {
+    color: green;
+}
+
+/* LINKS */
+/* img[src^="./img/"] {
+    border: 10px solid blue;
+} */
+
+/* img[src$=".jpeg"] {
+    border: 10px solid yellow;
+} */
+
+/* img[src*=".jpeg"] {
+    border: 10px solid navy;
+} */
