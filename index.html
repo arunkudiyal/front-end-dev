@@ -2,10 +2,11 @@
 
 <!-- Tag - <> / </> -> Opening or Closing
 HTML Element -> Opening + Closing - Head Element -->
-
+<!DOCTYPE html>
 <html>
     <!-- Meta - Data related to the documnet -->
     <head>
+        <meta charset="UTF-8">
         <title>My document</title>
     </head>
     <body>
@@ -135,6 +136,129 @@ HTML Element -> Opening + Closing - Head Element -->
 
         <hr>
 
+        <!-- iFrames -->
+        <h3>YouTube Videos : </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TpqDwlfPmD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr>
+
+        <h3>Google Maps : </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5225.471045893628!2d-122.00789717157548!3d37.333747188932485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1sen!2sin!4v1625061234728!5m2!1sen!2sin" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <hr>
+
+        <h3>HTML Forms : </h3>
+
+        <!-- Containers in HTML -> Inline element dont float/spill in the document - DIVISONS <div> -->
+
+        <form action="fake-server.js">
+            <div>
+                <label for="fName">First Name : </label>
+                <input type="text" />
+            </div> 
+
+            <div>
+                <label for="lName">Last Name : </label>
+                <input type="text" />
+            </div>
+
+            <!-- Email : username@hostname.com -->
+            <div>
+                <label for="email">E-Mail : </label>
+                <input type="email" />
+            </div>
+
+            <div>
+                <label for="password">Password : </label>
+                <input type="password" />
+            </div>
+
+            <div>
+                <label for="feedback">Feedback : </label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth : </label>
+                <input type="date" />
+            </div>
+
+            <div>
+                <label for="rating">Rating : </label>
+                <input type="range">
+            </div>
+
+            <div>
+                <label for="gender">Gender : </label>
+                <select>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="document">Select a file: </label>
+                <input type="file" />
+            </div>
+
+            <input type="submit" value="SUBMIT FORM">
+        </form>
+
+        <hr>
+
+        <h3>HTML Entities : </h3>
+        &lt;html&gt; <br>
+            &nbsp;&nbsp;&nbsp; &lt;head&gt; <br>
+            &nbsp;&nbsp;&nbsp; &lt;/head&gt; <br>
+        &lt;/html&gt;
+
+        <hr>
+
+        <!-- HTML 5 SEMANTICS -->
+        <h3>HTML - 5 Semantics : </h3>
+
+        <header>
+            <img src="/images/x-t30_sample-images04.jpg" alt="logo1">
+            <nav>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Option 2</li></a>
+                    <a href="#"><li>option 3</li></a>
+                    <a href="#"><li>Option 4</li></a>
+                    <a href="#"><li>About Us</li></a>
+                </ul>
+            </nav>
+            &telrec; <input type="text" placeholder="Serach">
+        </header>
+
+        <main>
+            <aside>
+                <ul>
+                    <li>Item - 1</li>
+                    <li>Item - 2</li>
+                </ul>
+            </aside>
+
+            <section>
+                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo possimus perferendis autem ea totam sed? Quam, asperiores atque. Possimus harum ea reprehenderit error recusandae.</article>
+
+                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo possimus perferendis autem ea totam sed? Quam, asperiores atque. Possimus harum ea reprehenderit error recusandae.</article>
+
+                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo possimus perferendis autem ea totam sed? Quam, asperiores atque. Possimus harum ea reprehenderit error recusandae.</article>
+
+                <details>
+                    <summary>This is a summary of something</summary>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet deleniti unde excepturi nemo, illum explicabo eos, reprehenderit blanditiis quae quis nesciunt aspernatur dolor nam veritatis magni fugit itaque sequi pariatur nulla labore voluptatibus voluptates placeat. Sint quo nesciunt est reiciendis.
+                </details>
+            </section>
+        </main>
+
+        <hr>
+            <footer>
+                &copy;2021, All Rights Rseserved!
+            </footer>
+        <hr>
         <div style="height: 400px;"></div>
     </body>
 </html>
