@@ -3,11 +3,13 @@
 Name color
 Hex Color - Hexadecimal code -> 000000 (black), FFFFFF(white)
 RGB() - Red Green Blue (x, y, z), 255 < x, y, z > 0
+RGBA() - Red Green Blue Absolute -> 0 < A < 1 -> Transparency
 */
 body {
     /* background: url(https://photographylife.com/wp-content/uploads/2016/06/Mass.jpg); */
     /* background-color: #fffff */
     background: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, rgba(84, 165, 232, 1), rgba(84, 165, 232, 0.4));
 }
 
 .container-one {
@@ -18,6 +20,24 @@ body {
     background-color: rgb(153, 192, 224);
     /* background-repeat: no-repeat; */
     background-size: cover;
+}
+
+/* GRADIENTS - Linear & Radial Gradient */
+.container-two {
+    height: 300px;
+    width: 70%;
+
+    /* linear-gradient(direction, setOfColors) */
+    /* background: linear-gradient(to right, rgb(84, 165, 232, 1), rgba(84, 165, 232, 0.4)); */
+
+    background: radial-gradient(circle, red, blue, green, yellow, brown);
+}
+
+.container-three {
+    height: 300px;
+    width: 70%;
+
+    background: linear-gradient(360deg, rgb(52, 59, 64, 1), rgb(52, 59, 64, 0.3));
 }
 
 /* #heading {
