@@ -8,8 +8,40 @@ RGBA() - Red Green Blue Absolute -> 0 < A < 1 -> Transparency
 body {
     /* background: url(https://photographylife.com/wp-content/uploads/2016/06/Mass.jpg); */
     /* background-color: #fffff */
-    background: rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255); */
     background: linear-gradient(to bottom, rgba(84, 165, 232, 1), rgba(84, 165, 232, 0.4));
+
+    /* font-size: 16px; */
+    text-transform: capitalize;
+    text-align: left;
+
+    font-size: 1.1em;
+
+    font-family: 'Roboto';
+}
+
+#heading, h2 {
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+#span {
+    font-style: italic;
+    background-color: lightyellow;
+}
+
+p {
+    text-align: justify;
+    font-weight: 200;
+}
+
+#google-link {
+    text-decoration: none;
+    color: grey;
+}
+
+h1 {
+    text-align: center;
 }
 
 .container-one {
@@ -33,13 +65,8 @@ body {
     background: radial-gradient(circle, red, blue, green, yellow, brown);
 }
 
-.container-three {
-    height: 300px;
-    width: 70%;
+/* UNITS OF MEASUREMENTS */
+/* 1. Absolue Unit 2. Relative Unit */
 
-    background: linear-gradient(360deg, rgb(52, 59, 64, 1), rgb(52, 59, 64, 0.3));
-}
-
-/* #heading {
-    color: 
-}  */
+/* cm, mm, in, px, pc */
+/* em, rem, % */
