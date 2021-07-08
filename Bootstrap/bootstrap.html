@@ -10,10 +10,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <!-- Page Header -->
-        <h1 class="page-header">Welcome to Bootstrap! <small>By Arun Kudiyal</small> </h1>
+        <h1 class="page-header text-center">Welcome to Bootstrap! <small>By Arun Kudiyal</small> </h1>
+    </div>
 
+    <div class="container">
         <!-- Paragraphs -->
         <h3>Paragraphs : </h3> <br>
         <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos recusandae blanditiis eligendi aspernatur libero quibusdam fugit officiis saepe, perferendis porro perspiciatis odit qui atque a placeat? Dolor tempora natus provident!</p>
@@ -36,6 +38,7 @@
             <footer>Quote by: <i>Mahartma Gandhi</i></footer>
         </blockquote>
 
+        <hr>
 
         <h3>Lists : </h3> <br>
 
@@ -88,6 +91,352 @@
         <p class="bg-info">Paragraph - 3</p>
         <p class="bg-warning">Paragraph - 4</p>
         <p class="bg-danger">Paragraph - 5</p>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Buttons, Links & Submit : </h3> <br>
+        <button class="btn btn-primary">Button</button>
+        <a class="btn btn-danger" href="#">Link</a>
+        <input class="btn btn-warning" type="submit" value="Submit">
+
+        <hr>
+
+        <h4>Button Sizes : </h4> <br>
+        <button class="btn btn-primary btn-lg">Button</button>
+        <button class="btn btn-primary btn-xs">Button</button>
+        <button class="btn btn-primary btn-sm">Button</button>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Forms in BS : </h3> <br>
+
+        <h4>Sign-up Form : </h4>
+        <div style="border: 2px solid black; padding: 20px; margin: 20px;">
+            <form action="#">
+                <div class="form-group">
+                    <label for="fName">First Name : </label>
+                    <input class="form-control" type="text" />
+                </div> 
+    
+                <div class="form-group">
+                    <label for="lName">Last Name : </label>
+                    <input class="form-control" type="text" />
+                </div>
+    
+                <!-- Email : username@hostname.com -->
+                <div class="form-group">
+                    <label for="email">E-Mail : </label>
+                    <input class="form-control" type="email" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Password : </label>
+                    <input class="form-control" type="password" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="feedback">Feedback : </label>
+                    <textarea class="form-control"></textarea>
+                </div class="form-group">
+    
+                <div class="form-group">
+                    <label for="dob">Date of Birth : </label>
+                    <input type="date" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="rating">Rating : </label>
+                    <input class="form-control" type="range">
+                </div>
+    
+                <div class="form-group">
+                    <label for="gender">Gender : </label>
+                    <select class="form-control">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="document">Select a file: </label>
+                    <input class="form-control" type="file" />
+                </div>
+                
+                <div>
+                    <label>
+                        <input type="checkbox"> I agree with the terms and conditions
+                    </label>
+                </div>
+    
+                <input class="btn btn-primary" type="submit" value="SUBMIT FORM">
+            </form>
+        </div>
+
+        <h4>Sign-in Form : </h4>
+        <div style="border: 2px solid black; padding: 20px;">
+            <form class="form-inline" action="#">
+                <div class="form-group">
+                    <label for="fName">Username : </label>
+                    <input class="form-control" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password : </label>
+                    <input class="form-control" type="password" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Tables : </h3> <br>
+        <table class="table table-bordered table-hover table-condensed">
+            <thead><h2 style="text-align: center;">--- List of Employees ---</h2></thead>
+            <thead style="background-color: cadetblue;">
+                <th>S.No.</th>
+                <th>Emp. Name</th>
+                <th>Emp. Age</th>
+                <th>Emp. Email</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Tim Cook</td>
+                    <td>60</td>
+                    <td>tim.cook@apple.com</td>
+                </tr>
+
+                <tr>
+                    <td>2.</td>
+                    <td>Creg</td>
+                    <td>45</td>
+                    <td>fedrigi.creg@apple.com</td>
+                </tr>
+
+                <tr>
+                    <td>3.</td>
+                    <td>John Ives</td>
+                    <td>50</td>
+                    <td>ives.john@apple.com</td>
+                </tr>
+
+                <tr>
+                    <td>4.</td>
+                    <td>John Adams</td>
+                    <td>35</td>
+                    <td>adams.john@apple.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>List Groups & List-Group-Items : </h3> <br>
+        <ul class="list-group">
+            <li class="list-group-item">List Item - 1</li>
+            <li class="list-group-item list-group-item-danger">List Item - 2</li>
+            <li class="list-group-item list-group-item-success">List Item - 3</li>
+            <li class="list-group-item">List Item - 4</li>
+            <li class="list-group-item list-group-item-info">List Item - 5</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Pagination : </h3> <br>
+        <div>
+            <ul class="pagination">
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li class="active"><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h3>Labels : </h3> <br>
+
+        <h5 class="text-center">This is a new content on the website <span class="label label-danger">SALE</span></h5>
+
+        <hr>
+
+        <h3>Alerts : </h3> <br>
+        <div class="alert alert-success">The payment is completed successfully! <a class="alert-link" href="#">click here to get payment details</a></div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Panels : </h3> <br>
+
+        <!-- Structure of the Panel -->
+        <div class="panel panel-primary">
+            <!-- section - 1 - Panel Heading -->
+            <div class="panel-heading">
+                <h2 class="text-center">Panel Heading</h2>
+            </div>
+            <!-- section - 2 - Panel Body -->
+            <div class="panel-body">
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora iste illum excepturi saepe corporis eos, ratione nam hic, dolorem aspernatur aut minus possimus atque eius maxime eveniet provident voluptas pariatur asperiores ea blanditiis perferendis, mollitia tenetur. Minus, porro odit.</p>
+            </div>
+            <!-- section - 1 - Panel Footer -->
+            <div class="panel-footer">
+                <b>Posted By</b> :  ABC-XYZ
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Wells : </h3> <br>
+
+        <h5 class="text-center"><i>DO-NOT GET CONFUSED WITH LIST-GROUP!</i></h5>
+
+        <div class="well">This is WELL-ONE</div>
+        <div class="well well-sm">This is WELL-TWO</div>
+        <div class="well well-lg">This is WELL-THREE</div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Progress Bar : </h3> <br>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 62%;">62%</div>
+        </div>
+
+        <h5>Stacked Progress Bar : </h5> <br>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 35%;">Documents (35%)</div>
+            <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 15%;">Music (15%)</div>
+            <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 25%;">Pictures (25%)</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Bootstrap Grids : </h3> <br>
+
+        <h5>6 x 6 Grid : </h5>
+        <div class="row">
+            <!-- col-md(Desktop), col-sm(Tablets), col-xs(mobile) -->
+            <div class="col-md-6">
+                <h4 class="text-center"><u>Coloumn 1</u></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsam accusamus nihil autem soluta eum suscipit quod, doloribus ab pariatur beatae a obcaecati illum explicabo, minima dolorum dolor quasi! Dolores ipsum asperiores laboriosam accusantium repudiandae possimus facilis quisquam officiis debitis delectus corrupti, deserunt maxime aperiam eaque sequi consectetur voluptatum corporis.</p>
+            </div>
+
+            <div class="col-md-6">
+                <h4 class="text-center"><u>Coloumn 2</u></h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius illo, reiciendis placeat iste dolor perferendis voluptas. Commodi molestiae incidunt tempore aliquam facere provident officiis reiciendis itaque, laboriosam ducimus hic voluptatem doloribus placeat omnis aliquid, laudantium est iusto nemo esse corrupti corporis? Nihil dicta libero repellendus reprehenderit distinctio error iure quidem.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h5>3 x 6 x 3 Grid :</h5> <br>
+        <div class="row">
+            <div class="col-md-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolor praesentium ad rem aspernatur quidem, assumenda molestias, quas saepe optio perspiciatis dolore veritatis ducimus odio corporis quis quos doloribus iusto?
+            </div>
+
+            <div class="col-md-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis dignissimos ad! Quae et officiis, blanditiis reprehenderit temporibus tempore, velit odit error quos excepturi explicabo perferendis! Placeat aliquid eveniet nostrum ea tempora quisquam, nam, consectetur omnis magni praesentium, dolor quia! Minus quo inventore consequatur in qui quasi, eos temporibus cum veniam excepturi ratione! Quasi nulla, voluptatem odio voluptate deleniti ad.
+            </div>
+
+            <div class="col-md-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolor praesentium ad rem aspernatur quidem, assumenda molestias, quas saepe optio perspiciatis dolore veritatis ducimus odio corporis quis quos doloribus iusto?
+            </div>
+        </div>
+
+        <hr>
+
+        <h5>3 x 3 x 3 x 3 Panel Grids : </h5> <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <!-- section - 1 - Panel Heading -->
+                    <div class="panel-heading">
+                        <h2 class="text-center">Panel Heading</h2>
+                    </div>
+                    <!-- section - 2 - Panel Body -->
+                    <div class="panel-body">
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora iste illum excepturi saepe corporis eos, ratione nam hic, dolorem aspernatur aut minus possimus atque eius maxime eveniet provident voluptas pariatur asperiores ea blanditiis perferendis, mollitia tenetur. Minus, porro odit.</p>
+                    </div>
+                    <!-- section - 1 - Panel Footer -->
+                    <div class="panel-footer">
+                        <b>Posted By</b> :  ABC-XYZ
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-danger">
+                    <!-- section - 1 - Panel Heading -->
+                    <div class="panel-heading">
+                        <h2 class="text-center">Panel Heading</h2>
+                    </div>
+                    <!-- section - 2 - Panel Body -->
+                    <div class="panel-body">
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora iste illum excepturi saepe corporis eos, ratione nam hic, dolorem aspernatur aut minus possimus atque eius maxime eveniet provident voluptas pariatur asperiores ea blanditiis perferendis, mollitia tenetur. Minus, porro odit.</p>
+                    </div>
+                    <!-- section - 1 - Panel Footer -->
+                    <div class="panel-footer">
+                        <b>Posted By</b> :  ABC-XYZ
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-warning">
+                    <!-- section - 1 - Panel Heading -->
+                    <div class="panel-heading">
+                        <h2 class="text-center">Panel Heading</h2>
+                    </div>
+                    <!-- section - 2 - Panel Body -->
+                    <div class="panel-body">
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora iste illum excepturi saepe corporis eos, ratione nam hic, dolorem aspernatur aut minus possimus atque eius maxime eveniet provident voluptas pariatur asperiores ea blanditiis perferendis, mollitia tenetur. Minus, porro odit.</p>
+                    </div>
+                    <!-- section - 1 - Panel Footer -->
+                    <div class="panel-footer">
+                        <b>Posted By</b> :  ABC-XYZ
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-info">
+                    <!-- section - 1 - Panel Heading -->
+                    <div class="panel-heading">
+                        <h2 class="text-center">Panel Heading</h2>
+                    </div>
+                    <!-- section - 2 - Panel Body -->
+                    <div class="panel-body">
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora iste illum excepturi saepe corporis eos, ratione nam hic, dolorem aspernatur aut minus possimus atque eius maxime eveniet provident voluptas pariatur asperiores ea blanditiis perferendis, mollitia tenetur. Minus, porro odit.</p>
+                    </div>
+                    <!-- section - 1 - Panel Footer -->
+                    <div class="panel-footer">
+                        <b>Posted By</b> :  ABC-XYZ
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div style="height: 400px;"></div>
