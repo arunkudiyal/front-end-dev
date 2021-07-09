@@ -179,6 +179,8 @@ h1 {
 /* Writing Animations */
 /* @keyframes animationName { } */
 
+
+/* Applying Animations */
 #heading {
     animation-name: red-to-white;
     animation-duration: 15s;
@@ -195,4 +197,19 @@ h1 {
     100% { background: white; transform: translate(15px, 15px);}
 }
 
-/* Applying Animations */
+
+
+/* MEDIA QUERIES - generate different CSS for different device-width / device-orientation */
+
+/* 1. Mobile First View
+2. Desktop First View */
+
+/* width (Desktop) - 780px - 6K
+width (Mobile) - 0px - 480 px (max-width)
+width (Tablet) - 480px - 780px  */
+
+@media (max-width: 480px) {
+    #sub-heading {
+        color: white;
+    }
+}
