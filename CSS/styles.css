@@ -208,8 +208,18 @@ h1 {
 width (Mobile) - 0px - 480 px (max-width)
 width (Tablet) - 480px - 780px  */
 
+/* Mobiles */
 @media (max-width: 480px) {
+    /* A;ll the mobile-related styling would be here */
     #sub-heading {
         color: white;
     }
+}
+
+@media (min-width: 780px) {
+    /* All the Desktop-styling will be here */
+}
+
+@media (orientation: portrait) {
+    
 }
