@@ -88,7 +88,7 @@
 //     alert('The Button was clicked twice!');
 // })
 
-// const textInput = document.getElementById('text-input')
+const textInput = document.getElementById('text-input')
 // console.log(textInput); 
 
 // textInput.addEventListener('focus', () => {
@@ -124,9 +124,9 @@
 
 // const textInput = document.getElementById('text-input')
 // textInput.addEventListener('keyup', (e) => {
-//     // console.log(e);
-//     const value = e.target.value
-//     console.log(value)
+//     console.log(e);
+//     // const value = e.target.value
+//     // console.log(value)
 // })
 
 // const button = document.getElementById('button')
@@ -136,11 +136,93 @@
 
 
 // *** FUN ACTIVITY ***
-const box = document.getElementById('box')
-box.addEventListener('mouseenter', (e) => {
-    box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 50)`
+// function mouseEnterFunction(e) {
+//     // console.log('Entered');
+//     box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 50)`
+// }
+
+// const box = document.getElementById('box')
+// box.addEventListener('mouseenter', mouseEnterFunction)
+
+// box.addEventListener('mouseleave', (e) => {
+//     box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 50)`
+// })
+
+
+// DOM TRAVERSALS
+
+// It is a way to navigate to the parent, children or any siblings of a given element
+
+// 1. Parent Element
+const item = document.querySelector('.list-group-item')
+// console.log(item);
+const listParentElement = item.parentElement
+// console.log(listParentElement);
+listParentElement.style.color = 'blue'
+listParentElement.style.border = `3px solid red`
+
+
+
+// 2. Children Elements
+const unordedList = document.querySelector('#items')
+// console.log(unordedList.childNodes);         // text (indentation)
+const children = unordedList.children
+console.log(children);
+
+for(let i=0; i < children.length; i++) {
+    if(i % 2 == 0) {
+        children[i].style.color = 'grey'
+    } else {
+        children[i].style.color = 'black'
+    }
+}
+// firstChild (text) & firstElementChild
+// lastChild (text) & lastElementChild
+
+
+
+// 3. Siblings - previous or next
+const secondText = document.getElementById('second-text')
+console.log(secondText);
+
+// console.log(secondText.previousSibling);            // text
+console.log(secondText.previousElementSibling);
+
+// console.log(secondText.nextElementSibling);`         // text
+console.log(secondText.nextElementSibling);
+
+
+
+// GENERATING AN HTML ELEMNT USING JS
+const newLi = document.createElement('li')
+
+// Providing attributes to your newly created element
+newLi.id = 'new-id'
+newLi.className = 'list-group-item'
+
+// Add this newly created element in the HTML
+// const items = document.getElementById('items')
+// items.appendChild(newLi)
+
+const items = document.getElementById('items')
+const submitButton = document.getElementById('submit-button')
+
+const text = document.getElementById('text-input')
+text.addEventListener('keyup', (e) => {
+    var value = e.target.value
+    submitButton.addEventListener('click', (e) => {
+        // Do-not want the submit-button to call the back-end
+        e.preventDefault()
+        newLi.innerText = value
+        items.appendChild(newLi)
+    })
 })
 
-box.addEventListener('mouseleave', (e) => {
-    box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 50)`
-})
+// submitButton.addEventListener('click', (e) => {
+//     // Do-not want the submit-button to call the back-end
+//     e.preventDefault()
+//     console.log(value);
+//     items.appendChild(newLi)
+// })
+
+console.log(newLi);
