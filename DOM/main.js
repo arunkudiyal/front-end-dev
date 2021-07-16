@@ -154,69 +154,69 @@ const textInput = document.getElementById('text-input')
 // It is a way to navigate to the parent, children or any siblings of a given element
 
 // 1. Parent Element
-const item = document.querySelector('.list-group-item')
-// console.log(item);
-const listParentElement = item.parentElement
-// console.log(listParentElement);
-listParentElement.style.color = 'blue'
-listParentElement.style.border = `3px solid red`
+// const item = document.querySelector('.list-group-item')
+// // console.log(item);
+// const listParentElement = item.parentElement
+// // console.log(listParentElement);
+// listParentElement.style.color = 'blue'
+// listParentElement.style.border = `3px solid red`
 
 
 
-// 2. Children Elements
-const unordedList = document.querySelector('#items')
-// console.log(unordedList.childNodes);         // text (indentation)
-const children = unordedList.children
-console.log(children);
+// // 2. Children Elements
+// const unordedList = document.querySelector('#items')
+// // console.log(unordedList.childNodes);         // text (indentation)
+// const children = unordedList.children
+// console.log(children);
 
-for(let i=0; i < children.length; i++) {
-    if(i % 2 == 0) {
-        children[i].style.color = 'grey'
-    } else {
-        children[i].style.color = 'black'
-    }
-}
+// for(let i=0; i < children.length; i++) {
+//     if(i % 2 == 0) {
+//         children[i].style.color = 'grey'
+//     } else {
+//         children[i].style.color = 'black'
+//     }
+// }
 // firstChild (text) & firstElementChild
 // lastChild (text) & lastElementChild
 
 
 
 // 3. Siblings - previous or next
-const secondText = document.getElementById('second-text')
-console.log(secondText);
+// const secondText = document.getElementById('second-text')
+// console.log(secondText);
 
-// console.log(secondText.previousSibling);            // text
-console.log(secondText.previousElementSibling);
+// // console.log(secondText.previousSibling);            // text
+// console.log(secondText.previousElementSibling);
 
-// console.log(secondText.nextElementSibling);`         // text
-console.log(secondText.nextElementSibling);
+// // console.log(secondText.nextElementSibling);`         // text
+// console.log(secondText.nextElementSibling);
 
 
 
 // GENERATING AN HTML ELEMNT USING JS
-const newLi = document.createElement('li')
+// const newLi = document.createElement('li')
 
 // Providing attributes to your newly created element
-newLi.id = 'new-id'
-newLi.className = 'list-group-item'
+// newLi.id = 'new-id'
+// newLi.className = 'list-group-item'
 
 // Add this newly created element in the HTML
 // const items = document.getElementById('items')
 // items.appendChild(newLi)
 
-const items = document.getElementById('items')
-const submitButton = document.getElementById('submit-button')
+// const items = document.getElementById('items')
+// const submitButton = document.getElementById('submit-button')
 
-const text = document.getElementById('text-input')
-text.addEventListener('keyup', (e) => {
-    var value = e.target.value
-    submitButton.addEventListener('click', (e) => {
-        // Do-not want the submit-button to call the back-end
-        e.preventDefault()
-        newLi.innerText = value
-        items.appendChild(newLi)
-    })
-})
+// const text = document.getElementById('text-input')
+// text.addEventListener('keyup', (e) => {
+//     var value = e.target.value
+//     submitButton.addEventListener('click', (e) => {
+//         // Do-not want the submit-button to call the back-end
+//         e.preventDefault()
+//         newLi.innerText = value
+//         items.appendChild(newLi)
+//     })
+// })
 
 // submitButton.addEventListener('click', (e) => {
 //     // Do-not want the submit-button to call the back-end
@@ -225,4 +225,4 @@ text.addEventListener('keyup', (e) => {
 //     items.appendChild(newLi)
 // })
 
-console.log(newLi);
+// console.log(newLi);
